@@ -4,5 +4,4 @@ CONFIG_IDF_TARGET="esp32s3"
 # 4MB flash (common on DevKitC-1)
 CONFIG_ESPTOOLPY_FLASHSIZE_4MB=y
 
-# Note: LVGL color depth is set at runtime via lv_display_set_color_format(LV_COLOR_FORMAT_L8)
-# to L8 grayscale for the SSD1306 monochrome OLED; no LVGL build option needs to be changed here.
+# Note: LVGL color depth is set at runtime via lv_display_set_color_format(LV_COLOR_FORMAT_L8)to L8 grayscale for the SSD1306 monochrome OLED; no LVGL build option needs to be changed here.
