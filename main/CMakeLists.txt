@@ -1,0 +1,21 @@
+idf_component_register(
+    SRCS "main.c"
+         "drivers/i2c_bus.c"
+         "drivers/ssd1306.c"
+         "drivers/button.c"
+         "drivers/led.c"
+         "drivers/buzzer.c"
+         "drivers/rgb_led.c"
+         "drivers/lvgl_port.c"
+         "ui/ui.c"
+         "ui/ui_pages.c"
+         "tasks/input_task.c"
+         "tasks/ui_task.c"
+         "tasks/feedback_task.c"
+         "tasks/rgb_task.c"
+    INCLUDE_DIRS "."
+                 "drivers"
+                 "ui"
+                 "tasks"
+    REQUIRES lvgl driver esp_timer freertos
+)

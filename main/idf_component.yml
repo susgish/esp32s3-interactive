@@ -1,0 +1,3 @@
+dependencies:
+  # 锁定 LVGL v9.2.x，避免 minor 版本漂移导致 API 变化
+  lvgl/lvgl: "~9.2.0"
