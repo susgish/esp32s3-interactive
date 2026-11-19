@@ -29,16 +29,16 @@
 ## 3. 软件架构（分层）
 
 ```
-┌─────────────────────────────────────────────┐
-│  tasks/   input_task  ui_task  feedback_task rgb_task │  FreeRTOS 任务层
-├─────────────────────────────────────────────┤
-│  ui/      ui.c  ui_pages.c（LVGL 界面）       │  界面层
-├─────────────────────────────────────────────┤
-│  drivers/ i2c_bus ssd1306 button led buzzer  │  驱动层
-│           lvgl_port（LVGL 移植）              │
-├─────────────────────────────────────────────┤
-│  硬件：SSD1306(I2C)  按键(GPIO)  LED 蜂鸣器    │
-└─────────────────────────────────────────────┘
+
+  tasks/   input_task  ui_task  feedback_task rgb_task   FreeRTOS 任务层
+
+  ui/      ui.c  ui_pages.c（LVGL 界面）         界面层
+
+  drivers/ i2c_bus ssd1306 button led buzzer    驱动层
+           lvgl_port（LVGL 移植）              
+
+  硬件：SSD1306(I2C)  按键(GPIO)  LED 蜂鸣器    
+
 ```
 
 ## 4. FreeRTOS 任务划分
