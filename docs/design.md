@@ -96,9 +96,9 @@ idf.py build
 
 | 选做项 | 状态 | 说明 |
 |---|---|---|
-| 三色灯呼吸 | ✅ 已实现 | 3 路 LEDC PWM（`drivers/rgb_led.c`）+ 独立任务 `rgb_task`，三路正弦波相位差 120° 叠加呼吸渐变 |
-| 测试用例清单 | ✅ 已实现 | `docs/test-cases.md`，覆盖编译、消抖、长短按边界、页面切换、反馈时序、呼吸灯 |
-| 简版项目计划 | ✅ 已实现 | `docs/project-plan.md`，按里程碑拆分工时 |
+| 三色灯呼吸 |  已实现 | 3 路 LEDC PWM（`drivers/rgb_led.c`）+ 独立任务 `rgb_task`，三路正弦波相位差 120° 叠加呼吸渐变 |
+| 测试用例清单 |  已实现 | `docs/test-cases.md`，覆盖编译、消抖、长短按边界、页面切换、反馈时序、呼吸灯 |
+| 简版项目计划 |  已实现 | `docs/project-plan.md`，按里程碑拆分工时 |
 | NTP 获取时间 | 未实现 | 需启用 WiFi + 联网，与本工程“离线精简组件”策略冲突；后续新增 `ntp_task` 用 `esp_netif_sntp` 取时 + `setenv("TZ")` 设时区 |
 | NTP 失败降级 | 未实现 | 依赖 NTP；思路：失败降级为本地占位时间并定时重试，结果经队列交 `ui_task` |
 | LVGL 多级菜单 | 未实现 | 在 `ui_pages.c` 基础上引入“菜单栈”，长按进入、短按选择/返回 |
