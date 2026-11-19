@@ -12,7 +12,7 @@
 
 **状态**：已修复（Fixed）
 
-### 描述
+描述
 
 `input_task` 依赖 `raw_btn_event_t.timestamp_ms` 计算按键持续时间，
 而该时间戳来自 `xTaskGetTickCountFromISR() * portTICK_PERIOD_MS`，为 32 位毫秒计数。
