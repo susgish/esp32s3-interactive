@@ -1,9 +1,9 @@
-# ESP-IDF 构建产物（本地生成，不入库）
+# ESP-IDF 构建产物
 build/
 sdkconfig
 sdkconfig.old
 
-# 组件管理器拉取的依赖（由 idf_component.yml 生成）
+# 组件管理器拉取的依赖
 managed_components/
 dependencies.lock
 
